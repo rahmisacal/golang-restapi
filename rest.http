@@ -1,0 +1,42 @@
+GET http://localhost:8000/api/books
+Accept: application/json
+
+###
+GET http://localhost:8000/api/books/1
+Accept: application/json
+
+###
+GET http://localhost:8000/api/books/2
+Accept: application/json
+
+###
+POST http://localhost:8000/api/books
+Content-Type: application/json
+
+{
+  "id": "3",
+  "isbn": "998743",
+  "title": "Book three",
+  "author": {
+    "firstname": "goe",
+    "lastname": "hoe"
+  }
+}
+
+###
+PUT http://localhost:8000/api/books/9727887
+Accept: application/json
+
+{
+  "id": "3",
+  "isbn": "398743",
+  "title": "Book three",
+  "author": {
+    "firstname": "roe",
+    "lastname": "hoe"
+  }
+}
+
+###
+DELETE http://localhost:8000/api/books/8498081
+Accept: application/json
